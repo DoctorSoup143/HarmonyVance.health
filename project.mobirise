@@ -55,7 +55,8 @@
     "cookiesAlert": false,
     "gdpr": false,
     "uniqCompNum": 16,
-    "versionPublish": "5.8.14"
+    "versionPublish": "5.8.14",
+    "screenshot": "screenshot.png"
   },
   "pages": {
     "index.html": {
@@ -63,9 +64,10 @@
         "main": true,
         "title": "Harmony Vance, ARNP",
         "meta_descr": "",
-        "header_custom": "<!-- Google tag (gtag.js) -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-XMKHDPMYWK\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-XMKHDPMYWK');\n</script>",
+        "header_custom": "<!-- Google tag (gtag.js) -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-XMKHDPMYWK\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-XMKHDPMYWK');\n</script>\n\n<!-- META TAGS -->\n    <meta charset=\"utf-8\">\n    <meta name=\"author\" content=\"Sean Drobish\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\">\n\n\n<title>Harmony Vance, ARNP</title>\n\n\n<!-- General Tags -->\n<meta property=\"og:image\" content=\"https://harmonyvance.health/assets/images/background15.webp\">\n<meta property=\"og:description\" content=\"A woman-owned and family-operated platform offering discreet and modern healthcare services. We specialize in comprehensive family medicine, catering to patients of all ages. Our weight loss programs and urgent care services are designed to address specific needs, while our personalized approach ensures a nurturing environment.\">\n<meta property=\"og:type\" content=\"website\">\n<meta property=\"og:title\" content=\"\">\n<meta property=\"og:url\" content=\"https://harmonyvance.health/\">\n<meta name=\"description\" content=\"A woman-owned and family-operated platform offering discreet and modern healthcare services. We specialize in comprehensive family medicine, catering to patients of all ages. Our weight loss programs and urgent care services are designed to address specific needs, while our personalized approach ensures a nurturing environment.n\">\n<meta name=\"keywords\" content=\"Woman owned, Family business, Family medicine, Discreet, Modern healthcare, Comprehesive, Weight loss, Urgent care\">\n\n<!-- Twitter Tags -->\n<meta name=\"twitter:image\" content=\"https://harmonyvance.health/assets/images/background15.webp\">\n<meta name=\"twitter:card\" content=\"summary_large_image\">\n<meta name=\"twitter:title\" content=\"Harmony Vance, ARNP\">\n<meta name=\"twitter:description\" content=\"A woman-owned and family-operated platform offering discreet and modern healthcare services. We specialize in comprehensive family medicine, catering to patients of all ages. Our weight loss programs and urgent care services are designed to address specific needs, while our personalized approach ensures a nurturing environment.\">\n<meta name=\"twitter:site\" content=\"\">\n\n<!-- Embed Theme Color -->\n<meta name=\"theme-color\" content=\"#ff8a8a\">",
         "footer_custom": "",
-        "html_before": ""
+        "html_before": "",
+        "meta_image": "asar://app.asar/web/app/themes/mobirise5/components/_images/background15.jpg"
       },
       "components": [
         {
