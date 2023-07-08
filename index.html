@@ -1,407 +1,273 @@
 <!DOCTYPE html>
-<html lang="en">
-
-
+<html  lang="en">
 <head>
-    <!-- Prevent Cache JS -->
-    <script type="text/javascript">
-        caches.delete("blazor-resources-/").then(function (e) {
-            console.log("'blazor-resources-/' cache deleted");
-        });
-    </script>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo5.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>Harmony Vance, ARNP</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/parallax/jarallax.css">
+  <link rel="stylesheet" href="assets/animatecss/animate.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;1,400;1,700&display=swap&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;1,400;1,700&display=swap&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
 
-    <!-- Prevent Cache HTML -->
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="-1">
-    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+  
+  
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XMKHDPMYWK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-
-    <!-- META TAGS -->
-    <meta charset="utf-8">
-    <meta name="author" content="Sean Drobish">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-    <title>Harmony Vance, ARNP</title>
-
-    <!-- General Tags -->
-    <meta property="og:image" content="https://tarkovkicktournaments.com/images/takedown-hero.png">
-    <meta property="og:description" content="Discover Comprehensive Care.
-        <br/><br/>
-        Lab Testing: Get STD, basic labs, allergy testing, genetics, and more through Quest Diagnostics.
-        <br/><br/>
-        Weight Loss Treatment: Discuss the medical necessity for weight loss and choose from Mounjaro, Wegovy, Ozempic, Saxenda, and more. All while we handle your insurance.
-        <br/><br/>
-        Compounded Medication: Insurance doesn't cover GLP's? Explore our extensive catalog of compounded meds.
-        <br/><br/>
-        Expertise: COVID treatment, asthma, COPD flare-ups, sexual health, eye issues, skin conditions, and much more. We've got you covered!
-        <br/><br/>
-        Personalized Solutions: From Mic Burn Troche to Vuity eye drops, we offer cutting-edge treatments tailored to your needs.
-        <br/><br/>
-        Convenience: Quick medication refills, efficient procedures, and exceptional care.">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Harmony Vance, ARNP">
-    <meta property="og:url" content="https://HarmonyVance.Health/">
-    <meta name="description" content="Discover Comprehensive Care.
-        <br/><br/>
-        Lab Testing: Get STD, basic labs, allergy testing, genetics, and more through Quest Diagnostics.
-        <br/><br/>
-        Weight Loss Treatment: Discuss the medical necessity for weight loss and choose from Mounjaro, Wegovy, Ozempic, Saxenda, and more. All while we handle your insurance.
-        <br/><br/>
-        Compounded Medication: Insurance doesn't cover GLP's? Explore our extensive catalog of compounded meds.
-        <br/><br/>
-        Expertise: COVID treatment, asthma, COPD flare-ups, sexual health, eye issues, skin conditions, and much more. We've got you covered!
-        <br/><br/>
-        Personalized Solutions: From Mic Burn Troche to Vuity eye drops, we offer cutting-edge treatments tailored to your needs.
-        <br/><br/>
-        Convenience: Quick medication refills, efficient procedures, and exceptional care.">
-    <meta name="keywords" content="tarkov, tournament, kick, doctorsoup143, tarkov tournament, tarkov events">
-
-    <!-- Twitter Tags -->
-    <meta name="twitter:image" content="https://tarkovkicktournaments.com/images/takedown-hero.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Harmony Vance, ARNP">
-    <meta name="twitter:description" content="Discover Comprehensive Care.
-        <br/><br/>
-        Lab Testing: Get STD, basic labs, allergy testing, genetics, and more through Quest Diagnostics.
-        <br/><br/>
-        Weight Loss Treatment: Discuss the medical necessity for weight loss and choose from Mounjaro, Wegovy, Ozempic, Saxenda, and more. All while we handle your insurance.
-        <br/><br/>
-        Compounded Medication: Insurance doesn't cover GLP's? Explore our extensive catalog of compounded meds.
-        <br/><br/>
-        Expertise: COVID treatment, asthma, COPD flare-ups, sexual health, eye issues, skin conditions, and much more. We've got you covered!
-        <br/><br/>
-        Personalized Solutions: From Mic Burn Troche to Vuity eye drops, we offer cutting-edge treatments tailored to your needs.
-        <br/><br/>
-        Convenience: Quick medication refills, efficient procedures, and exceptional care.">
-    <meta name="twitter:site" content="@DoctorSoup143">
-
-    <!-- Embed Theme Color -->
-    <meta name="theme-color" content="#111">
-
-    <!-- ///// STYLES ///// -->
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-print-css/css/bootstrap-print.min.css"
-        media="print">
-    <!-- FontAwesome -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <!-- Main Stylesheet -->
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="Kick Events.styles.css" rel="stylesheet" />
-
-
-    <!-- Favicon and Apple Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="images/192.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/96.png">
-
-    <!-- Radzen Stuff -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-    <link rel="stylesheet" href="_content/Radzen.Blazor/css/dark-base.css">
-    <script src="_content/BlazorTime/blazorTime.js"></script>
-    <script src="_content/Radzen.Blazor/Radzen.Blazor.js"></script>
+  gtag('config', 'G-XMKHDPMYWK');
+</script>
 </head>
-
-
-
-
-
 <body>
-    <style>
-        /* Primary Button */
-        .btn-primary {
 
-            color: #fff;
-            border-color: #009DFF;
-            background-color: #009DFF;
-        }
+<!-- Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XMKHDPMYWK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-        .btn-primary:hover {
-
-            color: #FFF;
-            border-color: #333;
-            background-color: #333;
-        }
+  gtag('config', 'G-XMKHDPMYWK');
+</script>
+<!-- /Analytics -->
 
 
-        .btn-outline-primary {
+  
+  <section data-bs-version="5.1" class="header13 cid-tJrYFDv7xH mbr-fullscreen mbr-parallax-background" id="header13-0">
 
-            color: #009DFF;
-            border-color: #009DFF;
-        }
+    
 
-        .btn-outline-primary:hover {
+    
+    
 
-            color: #FFF;
-            border-color: #009DFF;
-            background-color: #009DFF;
-        }
+    <div class="align-center container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-12">
+                <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong>Discover Comprehensive Care</strong></h1>
+                
+                <p class="mbr-text mbr-fonts-style mb-3 display-7">Harmony Vance, ARNP</p>
+                <div class="mbr-section-btn mt-3"><a class="btn btn-black display-4" href="https://www.pushhealth.com/practices/23909/new-patients/harmony">Become a Patient</a></div>
+                
+            </div>
+        </div>
+    </div>
+</section>
 
+<section data-bs-version="5.1" class="features1 cid-tJrZTObVn2" id="features1-4">
+    
 
-        /* Button Primary With Gray Hover */
-        .btn-outline-primary2 {
-
-            color: #009DFF;
-            border-color: #009DFF;
-        }
-
-        .btn-outline-primary2:hover {
-
-            color: #FFF;
-            border-color: #333;
-            background-color: #333;
-        }
-
-        /* Button Primary With Primary Hover */
-        .btn-outline-primary3 {
-
-            color: #009DFF;
-            border-color: #009DFF;
-        }
-
-        .btn-outline-primary3:hover {
-
-            color: #FFF;
-            border-color: #009DFF;
-            background-color: #009DFF;
-        }
-
-
-        /* Secondary Button */
-        .btn-outline-secondary {
-
-            color: #000;
-            border-color: transparent;
-        }
-
-        .btn-outline-secondary:hover {
-
-            color: #009DFF;
-            border-color: transparent;
-            background-color: transparent;
-        }
-
-        /* Secondary Button 2 */
-        .btn-outline-secondary2 {
-
-            color: #000;
-            border-color: #333;
-        }
-
-        .btn-outline-secondary2:hover {
-
-            color: #fff;
-            border-color: t#333;
-            background-color: #333;
-        }
-    </style>
-
-
-
-
-
-
-
-
-
-
-    <!-- Website Content -->
+    
+    
     <div class="container-fluid">
         <div class="row">
-            <div class="col-4 text-lg-start">
-                <p class="mt-lg-5">
-                    <span class="logo-text land-name"><!-- Intentionally Left Blank --></span>
-                </p>
-            </div>
-
-            <div class="col-4">
-                <!-- Intentionally Left Blank -->
-            </div>
-
-            <div class="col-4 text-lg-end mt-lg-5">
-                <button type="button" class="btn btn-outline-secondary">Services</button>
-                <button type="button" class="btn btn-outline-secondary">Documentation</button>
-            </div>
+            
         </div>
-
-        <!-- Center Landing -->
-        <div class="row mt-lg-5">
-            <div class="col-12 text-lg-center mb-lg-5">
-                <h1 class="land-title mt-lg-5">Discover Comprehensive Care</h1>
-                <p class="land-subtitle">Find a slogan thing.</p>
-
-                <button type="button" class="btn btn-primary mt-1">Get Started</button>
-                <button type="button" class="btn btn-outline-primary2 mt-1">Services</button>
-            </div>
-        </div>
-
-
-        <!-- Gradient Section -->
-        <div class="container-fluid" style="background-image: linear-gradient(#60e2ff, #0061FF);">
-            <div class="container">
-                <div class="row mt-lg-5">
-                    <!-- Card 1 -->
-                    <div class="col-4 mt-lg-5">
-                        <div class="card mb-lg-5" aria-hidden="true">
-                            <p class="card-icon text-center"><i class="fa-solid fa-user-nurse"></i></p>
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    Family Care
-                                </h5>
-                                <p class="card-text placeholder-glow">
-                                    Our
-                                    approach to family medicine extends beyond traditional medical treatments. We take
-                                    the time
-                                    to understand your family's lifestyle, environment, and individual needs, allowing
-                                    us to
-                                    provide personalized care that promotes optimal health.
-                                    <br /><br /><br /><br />
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div class="col-4">
-                        <div class="card mb-lg-5 mt-lg-5" aria-hidden="true">
-                            <p class="card-icon text-center"><i class="fa-solid fa-weight-scale"></i></p>
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    Weight loss
-                                </h5>
-                                <p class="card-text placeholder-glow">
-                                    Discover the path to a healthier you with our weight loss solutions. Our
-                                    comprehensive approach combines reduced calorie diets, effective exercise programs,
-                                    and expert support to help you achieve your weight loss goals.
-                                    <br /><br /><br /><br />
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="col-4">
-                        <div class="card mb-lg-5 mt-lg-5" aria-hidden="true">
-                            <p class="card-icon text-center"><i class="fa-solid fa-virus-covid"></i></p>
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    COVID Treatment
-                                </h5>
-                                <p class="card-text placeholder-glow">
-                                    Experience comprehensive COVID treatment tailored to your
-                                    needs. Our medical team is committed to providing you with advanced
-                                    treatment options, personalized care plans, and compassionate support throughout
-                                    your COVID recovery.
-                                    <br /><br /><br /><br />
-                                </p>
-                            </div>
-                        </div>
+        <div class="row">
+            <div class="card col-12 col-md-6 col-lg-3">
+                <div class="card-wrapper">
+                    <div class="card-box align-center">
+                        
+                        <h5 class="card-title mbr-fonts-style display-7"><strong>Family Medicine</strong></h5>
+                        <p class="card-text mbr-fonts-style display-7">Our approach to family care extends beyond traditional medical treatments. We take the time to understand your family's lifestyle, environment, and individual needs, allowing us to provide personalized care that promotes optimal health.</p>
                     </div>
                 </div>
             </div>
-
-
-            <!-- ////////////// Feature 1 Section ////////////// -->
-            <div class="container" style="height: 100vh;">
-                <div class="row mt-lg-3">
-                    <div class="col-6">
-                        <h1 class="feature-title col-6">
-                            New Patients
-                        </h1>
-                        <p class="feature-p">
-                            Sign up today and unlock a world of personalized treatment options designed to
-                            enhance your overall well-being. Whether you're seeking comprehensive family care or aiming
-                            to shed those extra pounds, our dedicated team is here to guide and support you every step
-                            of the way.
-                        </p>
-                    </div>
-                    <div class="col-6 mt-lg-5">
-                        <div class="card mb-lg-5" aria-hidden="true" style="margin-top: 25vh; margin-bottom: 25vh;">
-                            <p class="card-icon text-center"><i class="fa-sharp fa-solid fa-arrow-right-to-bracket"></i>
-                            </p>
-                            <div class="card-body">
-                                <div class="row">
-                                    <h5 class="card-title ms-3">
-                                        <i class="fa-sharp fa-solid fa-square-check"></i> Sign Up.
-                                        <br />
-                                        <i class="fa-sharp fa-solid fa-square"></i> Provide Your Medical
-                                        Information.
-                                        <br />
-                                        <i class="fa-sharp fa-solid fa-square"></i> Communicate Your Concerns.
-                                        <br />
-                                        <i class="fa-sharp fa-solid fa-square"></i> Connect With Your Provider.
-                                        <br />
-                                        <i class="fa-sharp fa-solid fa-square"></i> Experience Personalized Medical
-                                        Treatment.
-                                        <br />
-                                    </h5>
-                                </div>
-                                <div class="row justify-content-center">
-                                    <!-- Add icons for all nav menu tabs -->
-                                </div>
-                                <div class="row justify-content-center">
-                                    <button type="button" class="btn btn-outline-secondary2 mt-3 mb-3"
-                                        style="width: 50%;">Sign Up</button>
-                                </div>
-                            </div>
-                        </div>
+            <div class="card col-12 col-md-6 col-lg-3">
+                <div class="card-wrapper">
+                    <div class="card-box align-center">
+                        
+                        <h5 class="card-title mbr-fonts-style display-7"><strong>Weight Loss</strong></h5>
+                        <p class="card-text mbr-fonts-style display-7">Discover the path to a healthier you with our weight loss solutions. Our comprehensive approach combines reduced calorie diets, effective exercise programs, and expert support to help you achieve your weight loss goals.</p>
                     </div>
                 </div>
             </div>
-        </div>
-
-
-        <!-- ////////////// Feature 2 Section ////////////// -->
-        <div class="container-fluid" style="background-color: #030303;">
-            <div class="container" style="height: 100vh;">
-                <div class="row">
-                    <!-- Feature Card -->
-                    <div class="col-6 mt-lg-5">
-                        <div class="card mb-lg-5" aria-hidden="true" style="margin-top: 25vh; margin-bottom: 25vh;">
-                            <p class="card-icon text-center"><i class="fa-solid fa-code"></i></p>
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    <span class="placeholder col-4"></span>
-                                </h5>
-                                <p class="card-text placeholder-glow">
-                                    <span class="placeholder col-7"></span>
-                                    <span class="placeholder col-4"></span>
-                                    <span class="placeholder col-4"></span>
-                                    <span class="placeholder col-6"></span>
-                                    <span class="placeholder col-8"></span>
-                                    <span class="placeholder col-6"></span>
-                                    <span class="placeholder col-8"></span>
-                                    <span class="placeholder col-3"></span>
-                                    <span class="placeholder col-4"></span>
-                                    <span class="placeholder col-4"></span>
-                                </p>
-                                <span class="placeholder col-4"></span>
-                            </div>
-                        </div>
+            <div class="card col-12 col-md-6 col-lg-3">
+                <div class="card-wrapper">
+                    <div class="card-box align-center">
+                        
+                        <h5 class="card-title mbr-fonts-style display-7"><strong>COVID Treatment</strong></h5>
+                        <p class="card-text mbr-fonts-style display-7">Experience comprehensive COVID treatment tailored to your needs. Our medical team is committed to providing you with advanced treatment options, personalized care plans, and compassionate support throughout your COVID recovery.</p>
                     </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
 
-                    <!-- Feature Info -->
-                    <div class="col-6">
-                        <h1 class="feature-title col-6">
-                            Family Care
-                        </h1>
-                        <p class="feature-p">
-                            Family care isnt always black and white.
-                            <br />
-                            We believe that true wellness encompasses more than just physical health. That's why our
-                            approach to family medicine extends beyond traditional medical treatments. We take the time
-                            to understand your family's lifestyle, environment, and individual needs, allowing us to
-                            provide personalized care that promotes optimal health.
-                        </p>
+<section data-bs-version="5.1" class="features12 cid-tJrZSkLvpr mbr-parallax-background" id="features13-3">
+
+    
+
+    
+    <div class="mbr-overlay" style="opacity: 0.8; background-color: rgb(255, 255, 255);">
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-6">
+                <div class="card-wrapper">
+                    <div class="card-box align-left">
+                        <h4 class="card-title mbr-fonts-style mb-4 display-2">
+                            <strong>New Patients</strong></h4>
+                        <p class="mbr-text mbr-fonts-style mb-4 display-7">
+                            Sign up today and unlock a world of personalized treatment options designed to enhance your overall well-being. Whether you're seeking comprehensive family care or aiming to shed those extra pounds, our dedicated team is here to guide and support you every step of the way.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="item mbr-flex">
+                    <div class="icon-box">
+                        <span class="mbr-iconfont mobi-mbri-arrow-next mobi-mbri"></span>
+                    </div>
+                    <div class="text-box">
+                        <h4 class="icon-title mbr-black mbr-fonts-style display-7">
+                            <strong>Sign Up</strong></h4>
+                        <h5 class="icon-text mbr-black mbr-fonts-style display-4">Complete a simple sign up process and start your journey to personalized care.</h5>
+                    </div>
+                </div>
+                <div class="item mbr-flex">
+                    <div class="icon-box">
+                        <span class="mbr-iconfont mobi-mbri-edit mobi-mbri"></span>
+                    </div>
+                    <div class="text-box">
+                        <h4 class="icon-title mbr-black mbr-fonts-style display-7"><strong>Provide Your Medical Information.</strong></h4>
+                        <h5 class="icon-text mbr-black mbr-fonts-style display-4">Answer a few questions about your medical history, current medications, and other applicable details.</h5>
+                    </div>
+                </div>
+                <div class="item mbr-flex">
+                    <div class="icon-box">
+                        <span class="mbr-iconfont mobi-mbri-like mobi-mbri"></span>
+                    </div>
+                    <div class="text-box">
+                        <h4 class="icon-title mbr-black mbr-fonts-style display-7"><strong>Experience Personalized Medical Treatment.</strong></h4>
+                        <h5 class="icon-text mbr-black mbr-fonts-style display-4">Receive personalized care from our medical team regarding your specific concerns.</h5>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</body>
+</section>
+
+<section data-bs-version="5.1" class="content16 cid-tJs1Xysujc" id="content16-7">
+
+    
+
+    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <div class="mbr-section-head align-center mb-4">
+                    <h3 class="mbr-section-title mb-0 mbr-fonts-style display-2"><strong>FAQ</strong>
+                    </h3>
+                    
+                </div>
+                <div id="bootstrap-accordion_7" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
+                    <div class="card mb-3">
+                        <div class="card-header" role="tab" id="headingOne">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_7" aria-expanded="false" aria-controls="collapse1">
+                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>How long have you been in practice?</strong>
+                                </h6>
+                                <span class="sign mbr-iconfont mbri-arrow-down"></span>
+                            </a>
+                        </div>
+                        <div id="collapse1_7" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_7">
+                            <div class="panel-body">
+                                <p class="mbr-fonts-style panel-text display-4">I have been in practice since October of 2018 after graduating from South University of Tampa after completing their longest program to become a Family Nurse Practitioner. I treat patients of all ages, backgrounds, sexes, and genders- focusing on comprehensive personalized medical treatment.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-header" role="tab" id="headingOne">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse2_7" aria-expanded="false" aria-controls="collapse2">
+                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>What states do you provide telehealth services in?
+                                    </strong></h6>
+                                <span class="sign mbr-iconfont mbri-arrow-down"></span>
+                            </a>
+                        </div>
+                        <div id="collapse2_7" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_7">
+                            <div class="panel-body">
+                                <p class="mbr-fonts-style panel-text display-4">As a nurse practitioner, I currently only provide telehealth services to the states listed below.<br><br>Arizona, Arkansas, Colorado, Connecticut,&nbsp;District of Columbia, Delaware, Florida, Iowa, Idaho, Illinois, Indiana, Kentucky,&nbsp;Massachusetts,&nbsp;Maryland,&nbsp;Maine,&nbsp;Montana,&nbsp;North Dakota,&nbsp;Nebraska,&nbsp;New Hampshire,&nbsp;New Mexico, Nevada,&nbsp;New York,&nbsp;Oregon,&nbsp;Rhode Island,&nbsp;South Dakota,&nbsp;Utah,&nbsp;West Virginia, and&nbsp;Wyoming.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-header" role="tab" id="headingOne">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse3_7" aria-expanded="false" aria-controls="collapse3">
+                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>Do you take insurance?</strong></h6>
+                                <span class="sign mbr-iconfont mbri-arrow-down"></span>
+                            </a>
+                        </div>
+                        <div id="collapse3_7" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_7">
+                            <div class="panel-body">
+                                <p class="mbr-fonts-style panel-text display-4">Currently, no. The platform I utilize to communicate with patients, Push Health, currently does not allow me to accept payment from insurance companies. Instead, I charge a flat fee of $70 for my services, consultation, and for a prescription.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-header" role="tab" id="headingOne">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse4_7" aria-expanded="false" aria-controls="collapse4">
+                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>What if insurance wont cover my medication?</strong></h6>
+                                <span class="sign mbr-iconfont mbri-arrow-down"></span>
+                            </a>
+                        </div>
+                        <div id="collapse4_7" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_7">
+                            <div class="panel-body">
+                                <p class="mbr-fonts-style panel-text display-4">Once a determination is received by your insurance company regarding a denial for coverage regarding a drug, we still have a few options left. Depending on the drug I may be able to prescribe it to you at a fixed out of pocket rate and have it shipped to your doorstep!<br><br>This result varies depending on the requested medication.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-header" role="tab" id="headingOne">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse5_7" aria-expanded="false" aria-controls="collapse5">
+                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7"><strong>Do you offer compound medication options?</strong></h6>
+                                <span class="sign mbr-iconfont mbri-arrow-down"></span>
+                            </a>
+                        </div>
+                        <div id="collapse5_7" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_7">
+                            <div class="panel-body">
+                                <p class="mbr-fonts-style panel-text display-4">Yes! When it comes to weight loss I offer compounds such as&nbsp;Semaglutide and&nbsp;Tirzepatide with B6, in order to assist with nausea. These medications can be shipped to your doorstep at no extra charge, if this route is medically appropriate, complete with administrations and storage instructions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/parallax/jarallax.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/ytplayer/index.js"></script>
+  <script src="assets/mbr-switch-arrow/mbr-switch-arrow.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+  
+ <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
+    <input name="animation" type="hidden">
+  </body>
+</html>
